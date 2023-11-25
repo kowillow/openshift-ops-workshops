@@ -4,7 +4,6 @@ modules:
   activate:
   - environment
   - installation
-  - app-mgmt-basics
   - app-storage-basics
   - machinesets
   - infra-nodes
@@ -16,6 +15,8 @@ modules:
   - disabling-project-self-provisioning
   - clusterresourcequota
   - taints-and-tolerations
-  - windows-containers
-  
-  
+  - acm-multicluster-412
+  - acs-vulnerability-412
+  - acs-devsecops-412
+  - acs-devsecops
+  - acm-multicluster
