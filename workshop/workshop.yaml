@@ -16,6 +16,7 @@ modules:
   - clusterresourcequota
   - taints-and-tolerations
   - acm-multicluster-412
+  - acm-multicluster-412-ko
   - acs-vulnerability-412
   - acs-devsecops-412
   - acs-devsecops
