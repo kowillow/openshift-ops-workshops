@@ -1,37 +1,28 @@
-= Advanced Cluster Management for Kubernetes - RHACM
+= Kubernetes를 위한 고급 클러스터 관리 - RHACM
 
-== Working with Clusters and Cluster Lifecycle
+== 클러스터 및 클러스터 라이프사이클 작업
 
-At a high level Cluster Lifecycle management is about creating, upgrading, and destroying and importing clusters in a multi cloud environment.
+클러스터 라이프사이클 관리란 멀티 클라우드 환경에서 클러스터를 생성, 업그레이드, 삭제 및 가져오는 작업들을 말합니다.
 
-In the demo console you will find that ACM from 4.7 onwards is now intergrated with the OpenShift Cosnole. 
-
-Please find your console located below: 
+아래 주소를 통해 OpenShift 웹콘솔로 이동하세요: 
 
 {{ MASTER_URL }}
 
-If you navigate to `Local-cluster` then you should see the new ACM console when you select `All Clusters`.
-
-Once there you can proceed with the module.
+`Local-cluster`가 선택되어있는 경우 `All Clusters`를 선택하면 ACM 콘솔화면이 표시됩니다.
 
 image::images/acm-images/RHACM_all_cluster.png[]
 
 
-
-
-
-
 [start=1]
-1. Once you have logged in to ACM, Navigate to *Credentials menu* and then select *Add Credentials*
-
+1. ACM에 로그인한 후, *Credentials* 메뉴로 이동한 다음 *Add Credentials*를 선택합니다.
 
 image::images/acm-images/credentials.png[]
 
 image::images/acm-images/add_cred.png[]
 
-=== You will need to provide connection details:
+=== 클라우드 공급자에 대한 정보를 제공해야 합니다. :
 
-* Cloud Provider Credentials: Choose *Amazon Web Services* +
+* 클라우드 공급자 자격 증명 *Amazon Web Services* 선택 +
 
 image::images/acm-images/aws_cred.png[]
 
@@ -41,7 +32,10 @@ image::images/acm-images/aws_cred.png[]
 * Namespace: `open-cluster-management`
 * Base DNS Domain:  This information is located on the demo console under the field *rhacm_aws_subdomain*. You can also find it on the creds page for this workshop under *Top level domain*.
 
-When copy and pasting this information, make sure you omit the dot on the url, for example it should read `sandbox1536.opentlc.com` not `.sandbox1536.opentlc.com`
+이 정보는 데모 콘솔의 *rhacm_aws_subdomain* 필드 아래에 있습니다. 
+
+이 정보를 복사하여 붙여넣을 때 URL에서 점을 생략했는지 확인하세요. 예를 들어 `.sandbox1536.opentlc.com`이 아니라 `sandbox1536.opentlc.com`이어야 합니다.
+
 
 image::images/acm-images/cred_basicinfo.png[]
 
