@@ -26,7 +26,7 @@ image::images/acm-images/add_cred.png[]
 
 image::images/acm-images/aws_cred.png[]
 
-### Screen 1: Basic Info
+### 화면 1: 기본 정보
 
 * Credential Name:  `aws`
 * Namespace: `open-cluster-management`
@@ -42,7 +42,7 @@ image::images/acm-images/cred_basicinfo.png[]
 [start=2]
 2. Click NEXT
 
-### Screen 2 Amazon Web Services
+### 화면 2 Amazon Web Services
 
 * Access Key ID: This information is located on the creds page for the 
 demo console under the field *AWS_ACCESS_KEY_ID*
@@ -77,38 +77,38 @@ image::images/acm-images/screen4.png[]
 [start=5]
 5. Verify the information and click *ADD*
 
-== Create a new OpenShift cluster in AWS
+== AWS에서 새 OpenShift 클러스터 생성
 
 
-1. From the menu select *Infrastructure → Clusters*
-2. Click *Create Cluster*
+1. 메뉴에서 *Infrastructure → Clusters*를 선택합니다.
+2. *Create Cluster*를 클릭하세요.
 
 image::images/acm-images/create_cluster.png[]
 
 
 [start=3]
-3. Select *Amazon Web services*
+3. *Amazon Web services* 선택
 
 image::images/acm-images/aws_cluster.png[]
 
 [start=4]
-4. Select *Standalone*
+4. *Standalone* 선택
 
 image::images/acm-images/standalone.png[]
 
 [start=5]
-5. Select the *Infrastructure provider credential* we just created called *AWS*
+5. 아까 생성한 *AWS*라는 *Infrastructure provider credential*을 선택합니다.
 
-* Add the desired *cluster name*.
-* Leave the *Cluster set empty for now*
-* Select a *Release Image*, select the 4.12.26 version
-* Add an Additional labels of *environment=prod*
-* Click NEXT
+* 원하는 *cluster name*을 추가합니다.
+* 지금은 *Cluster set*를 비워 두세요.
+* *Release Image*를 선택하고 4.12.26 버전을 선택하세요.
+* *environment=prod*라는 추가 라벨을 추가합니다.
+* NEXT 클릭
 
-Change the region to *see table below*
+*아래 표*를 참고하여 region을 변경하세요.
 
 |===
-|Your Location | AWS Region to select
+|귀하의 위치 | 선택할 AWS 리전
 |*NORTH AMERICA*|Select *us-west-1* or *us-west-2*
 
 |*EUROPE / EMEA*|Select *eu-west-2* or *eu-west-3*
@@ -118,13 +118,13 @@ Change the region to *see table below*
 [start=6]
 6. Click NEXT on the other screens or select *7 - Review* on the menu and then click *CREATE*
 
-_This process takes about 30 to 40 minutes depending on AWS traffic at the time this course is taken. Make sure you monitor for any failures and address as needed_
+_이 과정은 이 과정을 수강하는 시점의 AWS 트래픽에 따라 약 30~40분 정도 소요됩니다._
 
-== Creating a Single Node Cluster (SNO) in AWS
+== AWS에서 단일 노드 클러스터(SNO) 생성
 
-While we wait for the main cluster to provision, lets go ahead and provision a Single Node Cluster. In this exercise we will show you how to create a single node cluster (OCP 4.8 and Above required) in order to save some time and resources when building clusters for testing.
+기본 클러스터가 프로비저닝될 때까지 기다리는 동안 계속해서 단일 노드 클러스터를 프로비저닝하겠습니다. 여기서는 테스트용 클러스터를 구축할 때, 시간과 리소스를 절약하기 위해 단일 노드 클러스터(OCP 4.8 이상 필요)를 생성하는 방법을 보여줍니다.
 
-*Please NOTE* that provisioning SNO clusters in public clouds is not currently supported, we only support SNO clusters as bare metal, we leverage the public cloud in the example below to showcase the functionality only.
+*주의* 퍼블릭 클라우드에서 SNO 클러스터를 프로비저닝하는 것은 현재 지원되지 않으며, 베어메탈로만 가능합니다. 아래 예에서는 퍼블릭 클라우드를 활용하여 기능만 보여줍니다.
 
 1. From the menu select *Infrastructure → Clusters*
 2. Click *Create Cluster*
